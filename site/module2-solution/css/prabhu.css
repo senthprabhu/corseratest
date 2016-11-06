@@ -1,0 +1,112 @@
+/***************** Base Styles **************/
+*{
+	box-sizing: border-box;
+}
+
+h1{
+	margin-bottom: 15px;
+ 	background-color: #61122f;
+	font-family: 'Oxygen', sans-serif;
+}
+
+section{
+	border: 1px solid grey;
+	background-color: pink;
+	width: 30%;
+	margin-top: -5px;
+	margin-left: auto;
+	margin-right: -5px;
+	vertical-align: top;
+	text-align: center;
+}
+
+div:nth-child(1) section {
+  background-color: gray;
+}
+
+div:nth-child(2) section {
+  background-color: pink;
+}
+
+div:nth-child(3) section {
+  background-color: purple;
+}
+
+
+p{
+	text-align: center;
+}
+
+div{
+	margin: 1%;
+	padding: 5px;
+
+}
+
+#p1 {
+  background-color: #A52A2A;
+  float: both;
+  height: 150px;
+  fill: both;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+
+/************* Media specific **********/
+/********* Desktop **************/
+@media (min-width: 992px) {
+  .col-lg-4{
+    float: left;
+    border: 1px solid green;
+    width: 30%;
+  }
+
+}
+
+/********** Tab ***********/
+@media (min-width: 768px) and (max-width: 991px){
+  .col-md-6{
+    float: right;
+    border: 1px solid green;
+    width: 46%;
+    fill: both;
+    min-width: 46%;
+    max-width: 98%;
+
+  }
+
+
+div:nth-child(3) section {
+    width: 15%;
+}
+
+.col-md-6:nth-child(3) {
+  background-color: gray;
+    width: 94%;
+}
+  
+  #p1
+  {
+  	background-color: #DEB887;
+  }
+}
+
+
+/********* Mobile *********/
+@media (max-width: 767px) {
+  .col-xs-12{
+    float: left;
+    border: 1px solid green;
+    width: 98%;
+  }
+
+  #p1
+  {
+  	clear: both;
+  }
+}
+
